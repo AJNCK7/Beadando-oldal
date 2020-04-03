@@ -1,0 +1,23 @@
+body
+{
+	background-color: darkgray;
+}
+
+#header
+{
+	background-color: brown;
+	text-align: center;
+
+}
+
+#nav
+{
+	background-color: yellow;
+	text-align: right;
+}
+
+#footer
+{
+	background-color: red;
+	text-align: right;
+}
