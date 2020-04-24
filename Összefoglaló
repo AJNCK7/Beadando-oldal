@@ -1,5 +1,29 @@
--Login/register javítása és véglegesítése
--Logout funkció
+összefoglaló1
+
+Alapvető dolgok :
+                            -htacces
+                            -index
+                            -config
+                            -footer,nav,header
+                            -database
+CSS alapok (elválasztások színekkel, szöveg helyezés, oldal elrendezése)
+adatbázis a regisztráláshoz és bejelenetkezéshez
+regisztrálás és bejelentkezés
+
+Javítandó: login/register-t nem tölti be
 
 
--Login/register még mindig nem működik (feltehetőleg az adatbázishoz nem csatlakozik)
+összefoglaló2
+-login/register működésre bírása
+-sql adatbázis frissítése, elkészítése (users)
+-navigációs felület egyszerűsítése (bejelentkezetnél nincs login/register)
+
+
+összefoglaló3
+-css bővítések (navigáció, content stb)  ---->még van benne hiba és van mit bővíteni 
+-navigáció bővítése,
+
+összefoglaló4 
+-rengeteg css 
+-új navigáció (félévek) 
+-adat feltöltések
