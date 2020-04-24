@@ -7,18 +7,83 @@ body
 {
 	background-color: brown;
 	text-align: center;
-	margin-bottom: 5px;
 
 }
 
 #nav
 {
+	padding-top: 5px;
+	padding-bottom: 5px;
 	background-color: yellow;
-	text-align: right;
+	text-align: center;
 }
+
+#nav > a
+{
+	width: 50px;
+	border: solid 2px black;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	border-radius: 40px;
+	background-color: #ffd966;
+	padding-left: 50px; padding-right: 50px; padding-top: 5px; padding-bottom: 5px;
+	color : black;
+}
+
 
 #footer
 {
 	background-color: red;
 	text-align: right;
+}
+
+#content
+{
+	background-color: orange;
+
+}
+
+	.evfolyam_gomb {
+	padding-left: 50px; padding-right: 50px; padding-top: 5px; padding-bottom: 5px;
+    border: solid 2px black;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	border-radius: 40px;
+	background-color: #ffd966;
+  }
+
+  .evfolyamoknav {
+  	display: inline-block;
+
+  }
+
+  .evfolyam_tartalom {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .evfolyam_tartalom a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .evfolyam_tartalom a:hover {background-color: #f1f1f1}
+
+  .evfolyamoknav:hover .evfolyam_tartalom{
+    display: block;
+  }
+
+  .evfolyamoknav:hover .evfolyam_gomb {
+    background-color: #3e8e41;
+  }
 }
