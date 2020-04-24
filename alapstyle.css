@@ -31,6 +31,11 @@ body
 	padding-left: 50px; padding-right: 50px; padding-top: 5px; padding-bottom: 5px;
 	color : black;
 }
+#pageturning
+{
+	text-align: center;
+	vertical-align: bottom;
+}
 
 
 #footer
@@ -39,8 +44,17 @@ body
 	text-align: right;
 }
 
+#félévnavlinks
+{
+	padding-top: 50px;
+	text-align: center;
+	font-size: 20pt;
+	font-family: "Times New ROMAN", Times, serif;
+}
+
 #content
 {
+	min-height: 500px;
 	background-color: orange;
 
 }
