@@ -23,7 +23,13 @@ Javítandó: login/register-t nem tölti be
 -css bővítések (navigáció, content stb)  ---->még van benne hiba és van mit bővíteni 
 -navigáció bővítése,
 
-összefoglaló4 
+összefoglaló4
+-login/register működésre bírása
+-sql adatbázis frissítése, elkészítése (users)
+-navigációs felület egyszerűsítése (bejelentkezetnél nincs login/register)
+
+
+összefoglaló5 
 -rengeteg css 
 -új navigáció (félévek) 
 -adat feltöltések
