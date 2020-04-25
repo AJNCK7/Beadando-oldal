@@ -10,6 +10,11 @@ switch ($_GET['P'])
 		case 'register': !IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/register.php' : header('Location: index.php'); break;
 		case 'logout': IsUserLoggedIn() ? UserLogout() : header('Location: index.php'); break;
 
+//user things
+		case 'userlist': IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/userlist.php' : header('Location: index.php'); break;
+		case 'usersettings': IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/usersettings.php' : header('Location: index.php'); break;
+			case 'edit_userdatas': IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/usersettings_datas.php' : header('Location: index.php'); break;
+
 //félévek
 		//I. FÉLÉV
 		case 'Ifelev': IsUserLoggedIn() ?  require_once PROTECTED_DIR.'felevek/I.felevnavlinks.php' : header('Location: index.php'); break;

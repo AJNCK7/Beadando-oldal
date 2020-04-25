@@ -33,3 +33,9 @@ Javítandó: login/register-t nem tölti be
 -rengeteg css 
 -új navigáció (félévek) 
 -adat feltöltések
+
+összefoglaló6
+-tagok lista
+-saját adatok beállítása:
+    -regisztrálásnál megadott adatok modosíthatóak (név,email,jelszó)
+    -csak a bejelentkezett felhasználó adatai modosíthatók (másét elm nem tudja)
