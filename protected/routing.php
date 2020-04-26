@@ -8,13 +8,15 @@ switch ($_GET['P'])
 		case 'home': require_once PROTECTED_DIR.'normal/home.php'; break;
 		case 'login': !IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/login.php' : header('Location: index.php'); break;
 		case 'register': !IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/register.php' : header('Location: index.php'); break;
+		case 'kereses': IsUserLoggedIn() ? require_once PROTECTED_DIR.'kereses.php' : header('Location: index.php'); break;
+			case 'keresesresult': IsUserLoggedIn() ? require_once PROTECTED_DIR.'keresesresult.php' : header('Location: index.php'); break;
+
 		case 'logout': IsUserLoggedIn() ? UserLogout() : header('Location: index.php'); break;
 
-//user things
+		//user things
 		case 'userlist': IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/userlist.php' : header('Location: index.php'); break;
 		case 'usersettings': IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/usersettings.php' : header('Location: index.php'); break;
 			case 'edit_userdatas': IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/usersettings_datas.php' : header('Location: index.php'); break;
-
 //félévek
 		//I. FÉLÉV
 		case 'Ifelev': IsUserLoggedIn() ?  require_once PROTECTED_DIR.'felevek/I.felevnavlinks.php' : header('Location: index.php'); break;

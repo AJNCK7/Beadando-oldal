@@ -39,3 +39,8 @@ Javítandó: login/register-t nem tölti be
 -saját adatok beállítása:
     -regisztrálásnál megadott adatok modosíthatóak (név,email,jelszó)
     -csak a bejelentkezett felhasználó adatai modosíthatók (másét elm nem tudja)
+
+
+    összefoglaló7
+    -a keresés funkció megvalósítása
+        - cím és kulcssszavak alapján
