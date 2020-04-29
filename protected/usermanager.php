@@ -13,10 +13,10 @@ function UserLogout()
 
 function UserLogin($email, $password)
 {
-	$query = "SELECT id, first_name, last_name, email FROM users WHERE email = :email AND password = :password";
+	$query = "SELECT id, first_name, last_name, email, permission FROM users WHERE email = :email AND password = :password";
 	$params = [
 				':email' => $email,
-				':password' => shal($password)
+				':password' => sha1($password)
 				];
 
 	require_once DATABASE_CONTROLLER;
@@ -27,8 +27,9 @@ function UserLogin($email, $password)
 		$_SESSION['fname'] = $record['first_name'];
 		$_SESSION['lname'] = $record['last_name'];
 		$_SESSION['email'] = $record['email'];
+		$_SESSION['permission'] = $record['permission'];
 
-		header('Location index.php');
+		header('Location: index.php');
 	}
 	return false;
 }
@@ -36,7 +37,7 @@ function UserLogin($email, $password)
 function UserRegister($email, $password, $fname, $lname)
 {
 	$query = "SELECT id FROM users email = :email";
-	$params = [ ':email' => $email];
+	$params = [':email' => $email];
 
 
 	require_once DATABASE_CONTROLLER;

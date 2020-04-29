@@ -41,6 +41,10 @@ Javítandó: login/register-t nem tölti be
     -csak a bejelentkezett felhasználó adatai modosíthatók (másét elm nem tudja)
 
 
-    összefoglaló7
+összefoglaló7
     -a keresés funkció megvalósítása
-        - cím és kulcssszavak alapján
+     - cím és kulcssszavak alapján
+
+összefoglaló8
+-keresési adatok hozzáadása weboldalon keresztül
+    -megtiltva az 1-es szintű permission alattiak lévő számára (nem jelenik meg számukra a lehetőség)

@@ -9,6 +9,7 @@ switch ($_GET['P'])
 		case 'login': !IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/login.php' : header('Location: index.php'); break;
 		case 'register': !IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/register.php' : header('Location: index.php'); break;
 		case 'kereses': IsUserLoggedIn() ? require_once PROTECTED_DIR.'kereses.php' : header('Location: index.php'); break;
+		case 'addkereseskeyword': IsUserLoggedIn() ? require_once PROTECTED_DIR.'addkereseskeyword.php' : header('Location: index.php'); break;
 			case 'keresesresult': IsUserLoggedIn() ? require_once PROTECTED_DIR.'keresesresult.php' : header('Location: index.php'); break;
 
 		case 'logout': IsUserLoggedIn() ? UserLogout() : header('Location: index.php'); break;
