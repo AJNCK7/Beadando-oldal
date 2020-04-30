@@ -13,6 +13,7 @@
   <a href = "index.php?P=userlist"> Taglista </a>
   <a href = "index.php?P=usersettings"> Beállítások </a>
   <a href = "index.php?P=kereses"> Keresés </a>
+  <a href = "index.php?P=alldatas"> Adatok </a>
   <a href="index.php?P=logout">Kijelentkezés</a>
 <?php else : ?>	
 	<a  href="index.php?P=login">Bejelentkezés</a>

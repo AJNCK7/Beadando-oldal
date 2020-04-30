@@ -8,9 +8,14 @@ switch ($_GET['P'])
 		case 'home': require_once PROTECTED_DIR.'normal/home.php'; break;
 		case 'login': !IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/login.php' : header('Location: index.php'); break;
 		case 'register': !IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/register.php' : header('Location: index.php'); break;
-		case 'kereses': IsUserLoggedIn() ? require_once PROTECTED_DIR.'kereses.php' : header('Location: index.php'); break;
-		case 'addkereseskeyword': IsUserLoggedIn() ? require_once PROTECTED_DIR.'addkereseskeyword.php' : header('Location: index.php'); break;
-			case 'keresesresult': IsUserLoggedIn() ? require_once PROTECTED_DIR.'keresesresult.php' : header('Location: index.php'); break;
+
+		case 'kereses': IsUserLoggedIn() ? require_once KERESES.'kereses.php' : header('Location: index.php'); break;
+		case 'addkereseskeyword': IsUserLoggedIn() ? require_once KERESES.'addkereseskeyword.php' : header('Location: index.php'); break;
+			case 'keresesresult': IsUserLoggedIn() ? require_once KERESES.'keresesresult.php' : header('Location: index.php'); break;
+
+		case 'alldatas': IsUserLoggedIn() ? require_once ADATTÁBLÁK.'alldata.php' : header('Location: index.php'); break;
+			case 'alldatas_usersedit': IsUserLoggedIn() ? require_once ADATTÁBLÁK.'alldata_usersedit.php' : header('Location: index.php'); break;
+			case 'alldatas_searchedit': IsUserLoggedIn() ? require_once ADATTÁBLÁK.'alldata_searchedit.php' : header('Location: index.php'); break;
 
 		case 'logout': IsUserLoggedIn() ? UserLogout() : header('Location: index.php'); break;
 

@@ -48,3 +48,7 @@ Javítandó: login/register-t nem tölti be
 összefoglaló8
 -keresési adatok hozzáadása weboldalon keresztül
     -megtiltva az 1-es szintű permission alattiak lévő számára (nem jelenik meg számukra a lehetőség)
+
+összefoglaló9
+-mappák készítése, fálj elrendezés
+-olyan oldal készítése ahol minden adat elérhető (modosítható, új adat hozzáadása, törlése)

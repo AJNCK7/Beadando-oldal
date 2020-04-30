@@ -1,4 +1,7 @@
-<?php
+<?php if(!isset($_SESSION['permission']) || $_SESSION['permission'] < 1) : ?>
+	<h1>A jogosultsági szint nem megfelelő</h1>
+<?php else : ?>
+	<?php
 	if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['addSearch'])) {
 		$postData = [
 			'title' => $_POST['title'],
@@ -60,3 +63,4 @@
 
 		<button type="submit" class="btn btn-primary" name="addSearch">Hozzáadás</button>
 	</form>
+<?php endif; ?>

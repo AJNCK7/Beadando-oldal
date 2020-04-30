@@ -3,6 +3,8 @@ define('BASE_DIR', './');
 define('PUBLIC_DIR', BASE_DIR.'public/');
 define('PROTECTED_DIR', BASE_DIR.'protected/');
 
+define('KERESES', BASE_DIR.PROTECTED_DIR.'/kereses/');
+define('ADATTÁBLÁK', BASE_DIR.PROTECTED_DIR.'/adattáblák/');
 define('I_FELEV', BASE_DIR.PROTECTED_DIR.'/felevek/I.felev/');
 define('II_FELEV', BASE_DIR.PROTECTED_DIR.'/felevek/II.felev/');
 
