@@ -15,7 +15,14 @@
 			$params = [':id' => $_GET['ds']];
 			require_once DATABASE_CONTROLLER;
 			executeDML($query, $params);
-		}			
+		}	
+
+		if(array_key_exists('dr', $_GET) && !empty($_GET['dr'])) {
+			$query = "DELETE FROM bugreports WHERE id = :id";
+			$params = [':id' => $_GET['dr']];
+			require_once DATABASE_CONTROLLER;
+			executeDML($query, $params);
+		}				
 	?>
 <?php 
 	$query = "SELECT id, first_name, last_name, email FROM users";
@@ -78,5 +85,31 @@
 				<?php endforeach;?>
 			</tbody>
 		</table>
+
+<h1> Hiba jelentések </h1>
+<?php 
+	$query = "SELECT * FROM bugreports ";
+	require_once DATABASE_CONTROLLER;
+	$report = getList($query);
+?>	
+	<table class="table table-striped">
+			<thead>
+				<tr>
+					<th scope="col">Cím</th>
+					<th scope="col">Törlés</th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php $i = 0; ?>
+				<?php foreach ($report as $r) : ?>
+					<?php $i++; ?>
+					<tr>
+						<td><?=$r['text'] ?></td>
+						<td><a href="?P=alldatas&dr=<?=$r['id']?>">Törlés</a></td>
+					</tr>
+				<?php endforeach;?>
+			</tbody>
+		</table>
+
 <?php endif; ?>
 
