@@ -21,6 +21,7 @@ switch ($_GET['P'])
 			case 'alldatas_searchedit': IsUserLoggedIn() ? require_once ADATTÁBLÁK.'alldata_searchedit.php' : header('Location: index.php'); break;
 
 		case 'logout': IsUserLoggedIn() ? UserLogout() : header('Location: index.php'); break;
+		case 'chat': IsUserLoggedIn() ? require_once PROTECTED_DIR.'chat.php' : header('Location: index.php'); break;
 
 		//user things
 		case 'userlist': IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/userlist.php' : header('Location: index.php'); break;

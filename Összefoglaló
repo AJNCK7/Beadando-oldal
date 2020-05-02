@@ -56,3 +56,7 @@ Javítandó: login/register-t nem tölti be
 összefoglaló10
 -hiba jelentési lehetőség
 -adattábla összesítő frissítve (törlési lehetőség)
+
+összefoglaló11
+-(korábban megcsinált) Vannak bizonyos funkciók amik nem jelennek meg csak bizonyos perimissionnal (adatok tábla, keresésnél új szó hozzáadás)
+-Egyszerű chat lehetőség
