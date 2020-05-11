@@ -12,7 +12,7 @@
 		{
 			echo "A hiba jelentés túl rövid!(min 15 karakter)";
 		} 
-		else 
+		else
 		{
 			$query = "INSERT INTO bugreports (text) VALUES (:text)";
 			$params = [

@@ -1,5 +1,5 @@
 <?php if(!isset($_SESSION['permission']) || $_SESSION['permission'] < 1) : ?>
-	<h1>Page access is forbidden!</h1>
+	<h1>A jogosultsági szint nem megfelelő</h1>
 <?php else : ?>
 
 	<?php
@@ -71,7 +71,7 @@
 		      		<option value="http://localhost:8080/beadando/index.php?P=userlist"
 		      			<?=$s['link'] == "http://localhost:8080/beadando/index.php?P=userlist" ? 'selected' : '' ?>>Felhasználó lista</option>
 		      		<option value="http://localhost:8080/beadando/index.php?P=Magprogea1"
-		      			<?=$s['link'] == "http://localhost:8080/beadando/index.php?P=Magprogea1" ? 'selected' : '' ?>>I félév- Magprog I. tétel</option>
+		      			<?=$s['link'] == "http://localhost:8080/beadando/index.php?P=Magprogea1" ? 'selected' : '' ?>>I félév - Magprog I. tétel</option>
 		    	</select>
 		  	</div>
 		</div>

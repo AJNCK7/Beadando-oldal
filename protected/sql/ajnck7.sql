@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1:3306
--- Létrehozás ideje: 2020. Máj 01. 09:18
+-- Létrehozás ideje: 2020. Máj 11. 13:05
 -- Kiszolgáló verziója: 10.4.10-MariaDB
 -- PHP verzió: 7.3.12
 
@@ -33,14 +33,41 @@ CREATE TABLE IF NOT EXISTS `bugreports` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `text` text COLLATE utf8_hungarian_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
 
 --
 -- A tábla adatainak kiíratása `bugreports`
 --
 
 INSERT INTO `bugreports` (`id`, `text`) VALUES
-(2, 'Itt található a hiba\r\nmert a \r\ncss \r\nmég nincs megcsinálva\r\n');
+(8, 'texturahiba az adatoknál\r\n');
+
+-- --------------------------------------------------------
+
+--
+-- Tábla szerkezet ehhez a táblához `chatmessages`
+--
+
+DROP TABLE IF EXISTS `chatmessages`;
+CREATE TABLE IF NOT EXISTS `chatmessages` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `knév` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
+  `message` text COLLATE utf8_hungarian_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=65 DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
+
+--
+-- A tábla adatainak kiíratása `chatmessages`
+--
+
+INSERT INTO `chatmessages` (`id`, `knév`, `message`) VALUES
+(1, 'Szabolcs', 'utzuzt'),
+(13, 'Anna', 'Megy'),
+(64, 'Anna', 'hogy a görgetés működik e'),
+(63, 'Anna', 'más felhasználóval'),
+(61, 'Szabolcs', 'valamivel'),
+(62, 'Anna', 'itt is'),
+(60, 'Szabolcs', 'üzenet feltöltés');
 
 -- --------------------------------------------------------
 
@@ -82,14 +109,16 @@ CREATE TABLE IF NOT EXISTS `users` (
   `password` varchar(250) COLLATE utf8_hungarian_ci NOT NULL,
   `permission` int(2) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
 
 --
 -- A tábla adatainak kiíratása `users`
 --
 
 INSERT INTO `users` (`id`, `first_name`, `last_name`, `email`, `password`, `permission`) VALUES
-(1, 'Nagy', 'Szabolcs', 'mikimi987654@gmail.com', 'f7c3bc1d808e04732adf679965ccc34ca7ae3441', 1);
+(1, 'Szabolcs', 'Nagy', 'mikimi987654@gmail.com', 'f7c3bc1d808e04732adf679965ccc34ca7ae3441', 1),
+(5, 'Anna', 'Nagyné', 'anna@indamail.hu', 'f7c3bc1d808e04732adf679965ccc34ca7ae3441', 0),
+(6, 'asd', 'asd', 'mikimi@vipmail.hu', 'f7c3bc1d808e04732adf679965ccc34ca7ae3441', 0);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

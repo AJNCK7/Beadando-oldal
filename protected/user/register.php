@@ -43,11 +43,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register']))
 <form method="post">
 	<div class="form-row">
 		<div class="form-group col-md-6">
-			<label for="registerFirstName">Vezetéknév</label>
+			<label for="registerFirstName">Keresztnév</label>
 			<input type="text" class="form-control" id="registerFisrtName" name="first_name" value="<?=isset($postData) ? $postData['fname'] : "";?>">
 		</div>
 		<div class="form-group col-md-6">
-			<label for="registerLastName">Keresztnév</label>
+			<label for="registerLastName">Vezetéknév</label>
 			<input type="text" class="form-control" id="registerLastName" name="last_name"value="<?=isset($postData) ? $postData['lname'] : "";?>">
 		</div>
 	</div>

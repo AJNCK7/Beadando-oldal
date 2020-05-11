@@ -1,4 +1,4 @@
-body
+﻿body
 {
 	background-color: darkgray;
 }
@@ -20,15 +20,12 @@ body
 
 #nav > a
 {
-	width: 50px;
 	border: solid 2px black;
-	padding-top: 5px;
-	padding-bottom: 5px;
 	margin-top: 2px;
 	margin-bottom: 2px;
 	border-radius: 40px;
 	background-color: #ffd966;
-	padding-left: 50px; padding-right: 50px; padding-top: 5px; padding-bottom: 5px;
+	padding-left: 15px; padding-right: 15px; padding-top: 5px; padding-bottom: 5px;
 	color : black;
 }
 #pageturning
@@ -37,6 +34,29 @@ body
 	vertical-align: bottom;
 }
 
+#alldatas > table
+{
+	margin-bottom: 0px;
+
+}
+#chat
+{
+	height: 250px;
+	background-color: white;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 50px;
+	border: 5px solid red;
+    overflow-y: scroll;
+}
+
+
+#container
+{
+	text-align: center;
+	font-size: 15pt;
+	padding-top: 80px;
+}
 
 #footer
 {
@@ -59,21 +79,27 @@ body
 
 }
 
+#search
+{
+	padding-top: 175px;
+	text-align: center;
+	font-size: 15pt;
+}
+
 	.evfolyam_gomb {
-	padding-left: 50px; padding-right: 50px; padding-top: 5px; padding-bottom: 5px;
-    border: solid 2px black;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	border: solid 2px black;
 	margin-top: 2px;
 	margin-bottom: 2px;
 	border-radius: 40px;
 	background-color: #ffd966;
+	padding-left: 15px; padding-right: 15px; padding-top: 5px; padding-bottom: 5px;
+	color : black;
   }
+
 
   .evfolyamoknav {
   	display: inline-block;
-
-  }
+  	  }
 
   .evfolyam_tartalom {
     display: none;

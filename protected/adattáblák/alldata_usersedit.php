@@ -1,5 +1,5 @@
 <?php if(!isset($_SESSION['permission']) || $_SESSION['permission'] < 1) : ?>
-	<h1>Page access is forbidden!</h1>
+	<h1>Alacsony jogosultsági szint</h1>
 <?php else : ?>
 
 	<?php
@@ -40,19 +40,19 @@
 		<div class="form-row">
 			<input type="hidden" name = "id" value="<?=$u['id']?>">
 			<div class="form-group col-md-6">
-				<label for="workerFirstName">First Name</label>
-				<input type="text" class="form-control" id="workerFirstName" name="first_name" value = "<?=$u['first_name']?>">
+				<label for="userFirstName">First Name</label>
+				<input type="text" class="form-control" id="userFirstName" name="first_name" value = "<?=$u['first_name']?>">
 			</div>
 			<div class="form-group col-md-6">
-				<label for="workerLastName">Last Name</label>
-				<input type="text" class="form-control" id="workerLastName" name="last_name" value="<?=$u['last_name']?>">
+				<label for="userLastName">Last Name</label>
+				<input type="text" class="form-control" id="userLastName" name="last_name" value="<?=$u['last_name']?>">
 			</div>
 		</div>
 
 		<div class="form-row">
 			<div class="form-group col-md-12">
-				<label for="workerEmail">Email</label>
-				<input type="email" class="form-control" id="workerEmail" name="email" value="<?=$u['email']?>">
+				<label for="userEmail">Email</label>
+				<input type="email" class="form-control" id="userEmail" name="email" value="<?=$u['email']?>">
 			</div>
 		</div>
 		

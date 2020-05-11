@@ -1,5 +1,5 @@
 	<?php
-	$query = "SELECT knév, message FROM chatmessages";
+	$query = "SELECT id, knév, message FROM chatmessages ORDER BY id ";
 	require_once DATABASE_CONTROLLER;
 	$messages = getList($query);
 	?>
@@ -14,7 +14,7 @@
 	</div>
 
 	<?php
-		$Knev = $_SESSION['lname'];
+		$Knev = $_SESSION['fname'];
 	if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['addMessage'])) {
 		$postData = [
 			'message' => $_POST['message']

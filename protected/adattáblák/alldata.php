@@ -1,3 +1,4 @@
+<div id="alldatas">
 <?php if(!isset($_SESSION['permission']) || $_SESSION['permission'] < 1) : ?>
 	<h1>A jogosultsági szint nem megfelelő</h1>
 <?php else : ?>
@@ -15,7 +16,7 @@
 			$params = [':id' => $_GET['ds']];
 			require_once DATABASE_CONTROLLER;
 			executeDML($query, $params);
-		}	
+		}
 
 		if(array_key_exists('dr', $_GET) && !empty($_GET['dr'])) {
 			$query = "DELETE FROM bugreports WHERE id = :id";
@@ -95,7 +96,7 @@
 	<table class="table table-striped">
 			<thead>
 				<tr>
-					<th scope="col">Cím</th>
+					<th scope="col">Szöveg</th>
 					<th scope="col">Törlés</th>
 				</tr>
 			</thead>
@@ -110,6 +111,5 @@
 				<?php endforeach;?>
 			</tbody>
 		</table>
-
 <?php endif; ?>
-
+</div>

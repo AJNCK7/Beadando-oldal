@@ -60,3 +60,10 @@ Javítandó: login/register-t nem tölti be
 összefoglaló11
 -(korábban megcsinált) Vannak bizonyos funkciók amik nem jelennek meg csak bizonyos perimissionnal (adatok tábla, keresésnél új szó hozzáadás)
 -Egyszerű chat lehetőség
+
+összefoglaló12
+-hiányos htaccess pótlása
+-végső simitások, javítások (főképpen css)
+    -chat tekerhetőség
+-beállitások átállítása úgy hogy a bejelenetkezési adatokon változtasson
+-sql fálj frissítése
