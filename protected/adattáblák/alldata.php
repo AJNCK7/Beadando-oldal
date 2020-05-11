@@ -4,9 +4,9 @@
 <?php else : ?>
 <h1> Felhasználók tábla</h1>
 	<?php 
-		if(array_key_exists('du', $_GET) && !empty($_GET['dz'])) {
+		if(array_key_exists('du', $_GET) && !empty($_GET['du'])) {
 			$query = "DELETE FROM users WHERE id = :id";
-			$params = [':id' => $_GET['d']];
+			$params = [':id' => $_GET['du']];
 			require_once DATABASE_CONTROLLER;
 			executeDML($query, $params);
 		}
